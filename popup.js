@@ -1,21 +1,15 @@
-/**
- * N予備校ページ内の総視聴必要時間を取得するプログラムです
+/*!
+ * Schedule Helper for N/S students v1.2.4
+ * https://github.com/Adr204/NyobiScheduleHelper
  * 
- * @version 1.2.3
- * v1.0 ServiceWorkerからtabに向けてsendMessageでどうにか通信しようとしてた
- * v1.1 わざわざDevToolsに新規タブ追加してhtmlからダークモードの検出しようとしてた
- * v1.2 即時関数で包んだりscriptをファイルで分けたりした
- * v1.2.1 urlによってメッセージが変化するように
- * v1.2.2 コードの整形
- * v1.2.3 メッセージ関数を引数に渡すように
- * 
- * @todo デザイン面の変更 -> スタイル設定とか色々
- * @todo なんか連打すると止まる
+ * Copyright 2022 Adr204
+ * Released under the MIT license
+ * https://github.com/Adr204/NyobiScheduleHelper/blob/main/LICENSE
  */
 
 ((response) => {
 	const themeInfo = "(prefers-color-scheme: dark)";
-	const imagePath = `images/calender_${window.matchMedia(themeInfo).matches ? "white" : "black"}_16.png`;
+	const imagePath = `images/calender_${window.matchMedia(themeInfo).matches ? "white" : "black"}.png`;
 	const queryInfo = { active: true, currentWindow: true };
 
 	chrome.action.setIcon({ path: imagePath });
@@ -29,7 +23,7 @@
 			if (lessonUrl.test(tab.url)) {
 				chrome.scripting.executeScript({
 					target: { tabId: tab.id },
-					files: ["snackbar.js", "content.js"]
+					files: ["js/snackbar.js", "js/content.js"]
 				}).then(() => response("then"))
 					.catch(error => response("catch", error));
 			} else {

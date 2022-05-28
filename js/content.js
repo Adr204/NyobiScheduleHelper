@@ -1,5 +1,10 @@
-/**
- * N予備校ページ内の動画コンテンツから視聴時間を習得し,見終えるまでにかかる時間を表示します
+/*!
+ * Schedule Helper for N/S students v1.2.4
+ * https://github.com/Adr204/NyobiScheduleHelper
+ * 
+ * Copyright 2022 Adr204
+ * Released under the MIT license
+ * https://github.com/Adr204/NyobiScheduleHelper/blob/main/LICENSE
  */
 
 (() => {
