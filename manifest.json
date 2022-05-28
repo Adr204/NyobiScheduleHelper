@@ -2,7 +2,7 @@
   "name": "Schedule Helper For N/S Students",
 	"description": "チャプター内の動画を見終えるまでにかかる時間を表示します",
 	"manifest_version": 3,
-	"version": "1.2",
+	"version": "1.2.4",
   "action": {
     "default_icon": "images/calender_white_16.png",
     "default_title": "click Me!",
