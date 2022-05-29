@@ -2,7 +2,7 @@
 ページ内の未視聴動画時間を取得します。
 初年度の見通し立てや、レポート締め切りまでの逆算などにお使いください。
 
-* ver1.0.0-beta 公開 2033/5/29
+* ver1.0.0-beta 公開 2022/5/29
 
 ---
 [NyobiScheduleHelper](https://github.com/Adr204/NyobiScheduleHelper/archive/refs/heads/main.zip)
@@ -18,6 +18,7 @@
 - カレンダーアイコン8
 #### [polonel](https://www.polonel.com/snackbar/) 様
 - Snackbar
+	- 一部改変
 
 ## LISENCE
 MIT
