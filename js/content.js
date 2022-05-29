@@ -38,7 +38,7 @@
 				cat.unwatched += length;
 				break;
 			case "movie supplement":
-			case "movie supplement good":
+			case "movie good supplement":
 				cat.supplement += length;
 				break;
 			default:
