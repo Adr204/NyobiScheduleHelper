@@ -1,10 +1,12 @@
 # ScheduleHelper for N/S students
+株式会社ドワンゴが提供するN予備校にて使える拡張機能です。
 ページ内の未視聴動画時間を取得します。
 初年度の見通し立てや、レポート締め切りまでの逆算などにお使いください。
 
 確認が取れ次第、動画の自動再生機能なども追加予定
 
 * ver1.0.0-beta 公開 2022/5/29
+* ver1.0.0 公開 2022/6/7
 
 ---
 [ScheduleHelper](https://github.com/Adr204/NyobiScheduleHelper/archive/refs/heads/main.zip)
